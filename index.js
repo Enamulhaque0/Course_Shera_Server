@@ -5,49 +5,28 @@ const cors = require("cors");
 
 app.use(cors());
 
-
 const courses = require("./data/courses.json");
 
-
 app.get("/", (req, res) => {
-    res.send("api running");
-  });
+  res.send("api running");
+});
 
+app.get("/courses", (req, res) => {
+  res.send(courses);
+});
 
-  app.get("/courses", (req, res) => {
-    res.send(courses);
-  });
-
-
-  app.get("/course/:id", (req, res) => {
-    const course = courses.find(c=> c.id == req.params.id)
-    res.send(course)
-  });
-
+app.get("/course/:id", (req, res) => {
+  const course = courses.find((c) => c.id == req.params.id);
+  res.send(course);
+});
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.get("/checkout/:id", (req, res) => {
+  const checkout = courses.find((c) => c.id == req.params.id);
+  res.send(checkout);
+})
 
 app.listen(port, () => {
-    console.log("Course Sheara running ", port);
-  });
+  console.log("Course Sheara running ", port);
+});
