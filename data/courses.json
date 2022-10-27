@@ -1,6 +1,6 @@
 [{
   "id": 1,
-  "title": "Beginning C++ Programming",
+  "title": "C++ Programming",
   "price": 84.99,
   "img": "https://i.ibb.co/VB2csJG/c.png",
   "instructor": "Dr. Frank Mitropoulos",
@@ -16,7 +16,7 @@
 },
 {
   "id": 3,
-  "title": "The Complete JavaScript Course 2022",
+  "title": "Complete JavaScript Course",
   "price": 64.99,
   "img": "https://i.ibb.co/y63FtWt/java-Script.png",
   "instructor": "Jonas Schmedtmann",
@@ -24,7 +24,7 @@
 },
 {
   "id": 4,
-  "title": "NodeJS - The Complete Guide",
+  "title": "NodeJS-The Complete Guide",
   "price": 84.99,
   "img": "https://i.ibb.co/myvbgdY/Nodejs.png",
   "instructor": "Maximilian",
